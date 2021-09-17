@@ -8,3 +8,4 @@ Endpoint Check-out: é composto pelos itens: semana, hora do checkout; dia do ch
 
 Endpoint Limpeza: dia da limpeza; hora para realização da limpeza; id limpeza.
 
+Para rodar é necessário instalar o Django na Venv ativada do seu computador, instalando também o django rest framework.
