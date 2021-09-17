@@ -1,16 +1,10 @@
-# This is a sample Python script.
+from datetime import datetime, timedelta
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+day = '12/Oct/2013'
+dt = datetime.strptime(day, '%d/%b/%Y')
+start = dt - timedelta(days=dt.weekday())
+end = start + timedelta(days=6)
+print(start)
+print(end)
 
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+# A ideia é que quando a API estiver completamente funcional, inserido a data da semana, sejam realizadas as requisições que se encontram nas respectivas datas que se enquadram na semana.
